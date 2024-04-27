@@ -1,0 +1,72 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>photo/figura_8.png</file>
+    <file>photo/lvl8.png</file>
+    <file>photo/figura_7.png</file>
+    <file>photo/lvl7.png</file>
+    <file>photo/lvl6.png</file>
+    <file>photo/figura-6.png</file>
+    <file>photo/figura_5.png</file>
+    <file>photo/lvl5.png</file>
+    <file>photo/lvl4.png</file>
+    <file>photo/figura_4.png</file>
+    <file>photo/figura_3.png</file>
+    <file>photo/lvl3.png</file>
+    <file>photo/figura_2.png</file>
+    <file>photo/lvl1.png</file>
+    <file>photo/lvl2.png</file>
+    <file>photo/Ellipse 1.png</file>
+    <file>photo/pravila.png</file>
+    <file>photo/Ellipse 2.png</file>
+    <file>photo/figura_1.png</file>
+    <file>photo/счёт.png</file>
+    <file>photo/уровень.png</file>
+    <file>photo/otmena.png</file>
+    <file>photo/otmena2.png</file>
+    <file>photo/zanovo.png</file>
+    <file>photo/zanovo2.png</file>
+    <file>photo/fon_lvl.png</file>
+    <file>photo/1.png</file>
+    <file>photo/1-2.png</file>
+    <file>photo/2.png</file>
+    <file>photo/2-2.png</file>
+    <file>photo/3.png</file>
+    <file>photo/3-2.png</file>
+    <file>photo/4.png</file>
+    <file>photo/4-2.png</file>
+    <file>photo/5.png</file>
+    <file>photo/5-2.png</file>
+    <file>photo/6 (1).png</file>
+    <file>photo/6.png</file>
+    <file>photo/7.png</file>
+    <file>photo/7-2.png</file>
+    <file>photo/8.png</file>
+    <file>photo/8-2.png</file>
+    <file>photo/kvadrik.png</file>
+    <file>photo/уровни.png</file>
+    <file>photo/звук.png</file>
+    <file>photo/back2.png</file>
+    <file>photo/back.png</file>
+    <file>photo/pravila.png</file>
+    <file>photo/settings-off.png</file>
+    <file>photo/settings-off2.png</file>
+    <file>photo/on2.png</file>
+    <file>photo/on2.png</file>
+    <file>photo/settings-on.png</file>
+    <file>photo/home2.png</file>
+    <file>photo/home.png</file>
+    <file>photo/звук.png</file>
+    <file>photo/settingss.png</file>
+    <file>photo/vopros2.png</file>
+    <file>photo/выход2.png</file>
+    <file>photo/настройки2.png</file>
+    <file>photo/играть2.png</file>
+    <file>photo/fon.png</file>
+    <file>photo/Обведи не отрывая лапки.png</file>
+    <file>photo/vopros.png</file>
+    <file>photo/выход.png</file>
+    <file>photo/звук.png</file>
+    <file>photo/играть.png</file>
+    <file>photo/настройки.png</file>
+  </qresource>
+</RCC>
