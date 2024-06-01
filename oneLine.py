@@ -110,7 +110,10 @@ class Level1Window(QtWidgets.QMainWindow):
     def __init__(self):
         super().__init__()
         self.init()
+        self.lvl_1.circle_1.clicked.connect(self.Connect_Points_1)
 
+    def Connect_Points_1(self):
+        self.lvl_1.circle_1.setEnabled(False)
     def init(self):
         self.lvl_1 = Ui_Level1Window()
         self.lvl_1.setupUi(self)

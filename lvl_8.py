@@ -91,14 +91,27 @@ class Ui_Level8Window(object):
         self.label_3.setStyleSheet("background-image: url(:/newPrefix/photo/lvl8.png);")
         self.label_3.setText("")
         self.label_3.setObjectName("label_3")
+        self.pushButton_21 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_21.setGeometry(QtCore.QRect(870, 340, 49, 52))
+        self.pushButton_21.setStyleSheet("QPushButton{\n"
+"background-image: url(:/newPrefix/photo/Ellipse 1.png);\n"
+"border: none;\n"
+"border-ruds: 9px;}\n"
+"\n"
+"QPushButton:hover{\n"
+"background-image: url(:/newPrefix/photo/Ellipse 2.png);\n"
+"border: none;\n"
+"border-ruds: 9px;}")
+        self.pushButton_21.setText("")
+        self.pushButton_21.setObjectName("pushButton_21")
         self.label_4 = QtWidgets.QLabel(self.centralwidget)
-        self.label_4.setGeometry(QtCore.QRect(480, 330, 549, 419))
-        self.label_4.setStyleSheet("background-image: url(:/newPrefix/photo/figura_8.png);")
+        self.label_4.setGeometry(QtCore.QRect(320, 340, 788, 419))
+        self.label_4.setStyleSheet("background-image: url(:/newPrefix/photo/fig8.png);")
         self.label_4.setText("")
         self.label_4.setObjectName("label_4")
-        self.pushButton_11 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_11.setGeometry(QtCore.QRect(482, 694, 49, 52))
-        self.pushButton_11.setStyleSheet("QPushButton{\n"
+        self.pushButton_22 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_22.setGeometry(QtCore.QRect(728, 520, 49, 52))
+        self.pushButton_22.setStyleSheet("QPushButton{\n"
 "background-image: url(:/newPrefix/photo/Ellipse 1.png);\n"
 "border: none;\n"
 "border-ruds: 9px;}\n"
@@ -107,11 +120,11 @@ class Ui_Level8Window(object):
 "background-image: url(:/newPrefix/photo/Ellipse 2.png);\n"
 "border: none;\n"
 "border-ruds: 9px;}")
-        self.pushButton_11.setText("")
-        self.pushButton_11.setObjectName("pushButton_11")
-        self.pushButton_12 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_12.setGeometry(QtCore.QRect(838, 329, 49, 52))
-        self.pushButton_12.setStyleSheet("QPushButton{\n"
+        self.pushButton_22.setText("")
+        self.pushButton_22.setObjectName("pushButton_22")
+        self.pushButton_23 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_23.setGeometry(QtCore.QRect(1059, 430, 49, 52))
+        self.pushButton_23.setStyleSheet("QPushButton{\n"
 "background-image: url(:/newPrefix/photo/Ellipse 1.png);\n"
 "border: none;\n"
 "border-ruds: 9px;}\n"
@@ -120,11 +133,11 @@ class Ui_Level8Window(object):
 "background-image: url(:/newPrefix/photo/Ellipse 2.png);\n"
 "border: none;\n"
 "border-ruds: 9px;}")
-        self.pushButton_12.setText("")
-        self.pushButton_12.setObjectName("pushButton_12")
-        self.pushButton_13 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_13.setGeometry(QtCore.QRect(629, 510, 49, 52))
-        self.pushButton_13.setStyleSheet("QPushButton{\n"
+        self.pushButton_23.setText("")
+        self.pushButton_23.setObjectName("pushButton_23")
+        self.pushButton_24 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_24.setGeometry(QtCore.QRect(870, 710, 49, 52))
+        self.pushButton_24.setStyleSheet("QPushButton{\n"
 "background-image: url(:/newPrefix/photo/Ellipse 1.png);\n"
 "border: none;\n"
 "border-ruds: 9px;}\n"
@@ -133,11 +146,11 @@ class Ui_Level8Window(object):
 "background-image: url(:/newPrefix/photo/Ellipse 2.png);\n"
 "border: none;\n"
 "border-ruds: 9px;}")
-        self.pushButton_13.setText("")
-        self.pushButton_13.setObjectName("pushButton_13")
-        self.pushButton_14 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_14.setGeometry(QtCore.QRect(698, 510, 49, 52))
-        self.pushButton_14.setStyleSheet("QPushButton{\n"
+        self.pushButton_24.setText("")
+        self.pushButton_24.setObjectName("pushButton_24")
+        self.pushButton_25 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_25.setGeometry(QtCore.QRect(1059, 616, 49, 52))
+        self.pushButton_25.setStyleSheet("QPushButton{\n"
 "background-image: url(:/newPrefix/photo/Ellipse 1.png);\n"
 "border: none;\n"
 "border-ruds: 9px;}\n"
@@ -146,11 +159,11 @@ class Ui_Level8Window(object):
 "background-image: url(:/newPrefix/photo/Ellipse 2.png);\n"
 "border: none;\n"
 "border-ruds: 9px;}")
-        self.pushButton_14.setText("")
-        self.pushButton_14.setObjectName("pushButton_14")
-        self.pushButton_15 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_15.setGeometry(QtCore.QRect(980, 502, 49, 52))
-        self.pushButton_15.setStyleSheet("QPushButton{\n"
+        self.pushButton_25.setText("")
+        self.pushButton_25.setObjectName("pushButton_25")
+        self.pushButton_26 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_26.setGeometry(QtCore.QRect(512, 340, 49, 52))
+        self.pushButton_26.setStyleSheet("QPushButton{\n"
 "background-image: url(:/newPrefix/photo/Ellipse 1.png);\n"
 "border: none;\n"
 "border-ruds: 9px;}\n"
@@ -159,11 +172,11 @@ class Ui_Level8Window(object):
 "background-image: url(:/newPrefix/photo/Ellipse 2.png);\n"
 "border: none;\n"
 "border-ruds: 9px;}")
-        self.pushButton_15.setText("")
-        self.pushButton_15.setObjectName("pushButton_15")
-        self.pushButton_16 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_16.setGeometry(QtCore.QRect(840, 700, 49, 52))
-        self.pushButton_16.setStyleSheet("QPushButton{\n"
+        self.pushButton_26.setText("")
+        self.pushButton_26.setObjectName("pushButton_26")
+        self.pushButton_27 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_27.setGeometry(QtCore.QRect(514, 703, 49, 52))
+        self.pushButton_27.setStyleSheet("QPushButton{\n"
 "background-image: url(:/newPrefix/photo/Ellipse 1.png);\n"
 "border: none;\n"
 "border-ruds: 9px;}\n"
@@ -172,11 +185,11 @@ class Ui_Level8Window(object):
 "background-image: url(:/newPrefix/photo/Ellipse 2.png);\n"
 "border: none;\n"
 "border-ruds: 9px;}")
-        self.pushButton_16.setText("")
-        self.pushButton_16.setObjectName("pushButton_16")
-        self.pushButton_17 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_17.setGeometry(QtCore.QRect(480, 330, 49, 52))
-        self.pushButton_17.setStyleSheet("QPushButton{\n"
+        self.pushButton_27.setText("")
+        self.pushButton_27.setObjectName("pushButton_27")
+        self.pushButton_28 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_28.setGeometry(QtCore.QRect(660, 516, 49, 52))
+        self.pushButton_28.setStyleSheet("QPushButton{\n"
 "background-image: url(:/newPrefix/photo/Ellipse 1.png);\n"
 "border: none;\n"
 "border-ruds: 9px;}\n"
@@ -185,8 +198,47 @@ class Ui_Level8Window(object):
 "background-image: url(:/newPrefix/photo/Ellipse 2.png);\n"
 "border: none;\n"
 "border-ruds: 9px;}")
-        self.pushButton_17.setText("")
-        self.pushButton_17.setObjectName("pushButton_17")
+        self.pushButton_28.setText("")
+        self.pushButton_28.setObjectName("pushButton_28")
+        self.pushButton_29 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_29.setGeometry(QtCore.QRect(324, 610, 49, 52))
+        self.pushButton_29.setStyleSheet("QPushButton{\n"
+"background-image: url(:/newPrefix/photo/Ellipse 1.png);\n"
+"border: none;\n"
+"border-ruds: 9px;}\n"
+"\n"
+"QPushButton:hover{\n"
+"background-image: url(:/newPrefix/photo/Ellipse 2.png);\n"
+"border: none;\n"
+"border-ruds: 9px;}")
+        self.pushButton_29.setText("")
+        self.pushButton_29.setObjectName("pushButton_29")
+        self.pushButton_30 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_30.setGeometry(QtCore.QRect(320, 425, 49, 52))
+        self.pushButton_30.setStyleSheet("QPushButton{\n"
+"background-image: url(:/newPrefix/photo/Ellipse 1.png);\n"
+"border: none;\n"
+"border-ruds: 9px;}\n"
+"\n"
+"QPushButton:hover{\n"
+"background-image: url(:/newPrefix/photo/Ellipse 2.png);\n"
+"border: none;\n"
+"border-ruds: 9px;}")
+        self.pushButton_30.setText("")
+        self.pushButton_30.setObjectName("pushButton_30")
+        self.pushButton_31 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_31.setGeometry(QtCore.QRect(870, 340, 49, 52))
+        self.pushButton_31.setStyleSheet("QPushButton{\n"
+"background-image: url(:/newPrefix/photo/Ellipse 1.png);\n"
+"border: none;\n"
+"border-ruds: 9px;}\n"
+"\n"
+"QPushButton:hover{\n"
+"background-image: url(:/newPrefix/photo/Ellipse 2.png);\n"
+"border: none;\n"
+"border-ruds: 9px;}")
+        self.pushButton_31.setText("")
+        self.pushButton_31.setObjectName("pushButton_31")
         Level8Window.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(Level8Window)

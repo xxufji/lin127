@@ -122,19 +122,6 @@ class Ui_Level7Window(object):
 "border-ruds: 9px;}")
         self.pushButton_6.setText("")
         self.pushButton_6.setObjectName("pushButton_6")
-        self.pushButton_7 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_7.setGeometry(QtCore.QRect(707, 502, 49, 52))
-        self.pushButton_7.setStyleSheet("QPushButton{\n"
-"background-image: url(:/newPrefix/photo/Ellipse 1.png);\n"
-"border: none;\n"
-"border-ruds: 9px;}\n"
-"\n"
-"QPushButton:hover{\n"
-"background-image: url(:/newPrefix/photo/Ellipse 2.png);\n"
-"border: none;\n"
-"border-ruds: 9px;}")
-        self.pushButton_7.setText("")
-        self.pushButton_7.setObjectName("pushButton_7")
         self.pushButton_8 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_8.setGeometry(QtCore.QRect(703, 680, 49, 52))
         self.pushButton_8.setStyleSheet("QPushButton{\n"
@@ -187,6 +174,32 @@ class Ui_Level7Window(object):
 "border-ruds: 9px;}")
         self.pushButton_11.setText("")
         self.pushButton_11.setObjectName("pushButton_11")
+        self.pushButton_12 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_12.setGeometry(QtCore.QRect(838, 681, 49, 52))
+        self.pushButton_12.setStyleSheet("QPushButton{\n"
+"background-image: url(:/newPrefix/photo/Ellipse 1.png);\n"
+"border: none;\n"
+"border-ruds: 9px;}\n"
+"\n"
+"QPushButton:hover{\n"
+"background-image: url(:/newPrefix/photo/Ellipse 2.png);\n"
+"border: none;\n"
+"border-ruds: 9px;}")
+        self.pushButton_12.setText("")
+        self.pushButton_12.setObjectName("pushButton_12")
+        self.pushButton_13 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_13.setGeometry(QtCore.QRect(567, 680, 49, 52))
+        self.pushButton_13.setStyleSheet("QPushButton{\n"
+"background-image: url(:/newPrefix/photo/Ellipse 1.png);\n"
+"border: none;\n"
+"border-ruds: 9px;}\n"
+"\n"
+"QPushButton:hover{\n"
+"background-image: url(:/newPrefix/photo/Ellipse 2.png);\n"
+"border: none;\n"
+"border-ruds: 9px;}")
+        self.pushButton_13.setText("")
+        self.pushButton_13.setObjectName("pushButton_13")
         Level7Window.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(Level7Window)
