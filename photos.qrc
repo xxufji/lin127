@@ -1,5 +1,49 @@
 <RCC>
   <qresource prefix="newPrefix">
+    <file>photo/Line8 7.png</file>
+    <file>photo/Line8 7.png</file>
+    <file>photo/Line8 1.2.png</file>
+    <file>photo/Line8 1.png</file>
+    <file>photo/Line8 2.2.png</file>
+    <file>photo/Line8 2.png</file>
+    <file>photo/Line8 3.2.png</file>
+    <file>photo/Line8 3.png</file>
+    <file>photo/Line8 4.2.png</file>
+    <file>photo/Line8 4.png</file>
+    <file>photo/Line8 5.2.png</file>
+    <file>photo/Line8 5.png</file>
+    <file>photo/Line8 6.2.png</file>
+    <file>photo/Line8 6.png</file>
+    <file>photo/Line8 7.2.png</file>
+    <file>photo/Line8 7.png</file>
+    <file>photo/Line8 8.2.png</file>
+    <file>photo/Line8 8.png</file>
+    <file>photo/Line8 9.2.png</file>
+    <file>photo/Line8 9.png</file>
+    <file>photo/Line8 10.2.png</file>
+    <file>photo/Line8 10.png</file>
+    <file>photo/Line8 11.2.png</file>
+    <file>photo/Line8 11.png</file>
+    <file>photo/Line8 13.2.png</file>
+    <file>photo/Line8 13.png</file>
+    <file>photo/Line8 14.2.png</file>
+    <file>photo/Line8 14.png</file>
+    <file>photo/Line7 1.2.png</file>
+    <file>photo/Line7 1.png</file>
+    <file>photo/Line7 2.2.png</file>
+    <file>photo/Line7 2.png</file>
+    <file>photo/Line7 3.2.png</file>
+    <file>photo/Line7 3.png</file>
+    <file>photo/Line7 4.2.png</file>
+    <file>photo/Line7 4.png</file>
+    <file>photo/Line7 5.2.png</file>
+    <file>photo/Line7 5.png</file>
+    <file>photo/Line7 6.2.png</file>
+    <file>photo/Line7 6.png</file>
+    <file>photo/Line7 7.2.png</file>
+    <file>photo/Line7 7.png</file>
+    <file>photo/Line7 8.2.png</file>
+    <file>photo/Line7 8.png</file>
     <file>photo/Line6 1.2.png</file>
     <file>photo/Line6 1.png</file>
     <file>photo/Line6 2.2.png</file>
