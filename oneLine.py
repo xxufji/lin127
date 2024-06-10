@@ -109,23 +109,29 @@ class Level1Window(QtWidgets.QMainWindow):
         self.lvl_1 = Ui_Level1Window()
         self.lvl_1.setupUi(self)
 
-        self.lvl_1.circle_1.clicked.connect(self.Connect_Points_1)
-        self.lvl_1.circle_3.clicked.connect(self.Connect_Points_3)
-        self.lvl_1.circle_4.clicked.connect(self.Connect_Points_4)
         self.lvl_1.pushButton.clicked.connect(self.go_home)
         self.lvl_1.pushButton_2.clicked.connect(self.go_back)
         self.lvl_1.pushButton_3.clicked.connect(self.restart)
+        self.lvl_1.circle_1.clicked.connect(self.Connect_Points_1)
+        self.lvl_1.circle_3.clicked.connect(self.Connect_Points_3)
+        self.lvl_1.circle_4.clicked.connect(self.Connect_Points_4)
+        self.stopper = True
 
     def Connect_Points_1(self):
-        self.lvl_1.circle_1.setEnabled(False)
-        if not self.lvl_1.circle_3.isEnabled():
-            self.lvl_1.label_7.setStyleSheet("background-image: url(:/newPrefix/photo/Line 4.2.png);")
-            self.lvl_1.label_6.setStyleSheet("background-image: url(:/newPrefix/photo/Line 3.2.png);")
+        if not self.stopper:
+            return
+        else:
+            self.lvl_1.circle_1.setEnabled(False)
+            if not self.lvl_1.circle_3.isEnabled():
+                self.lvl_1.label_7.setStyleSheet("background-image: url(:/newPrefix/photo/Line 4.2.png);")
+                self.lvl_1.label_6.setStyleSheet("background-image: url(:/newPrefix/photo/Line 3.2.png);")
+            self.stopper = False
 
     def Connect_Points_3(self):
         self.lvl_1.circle_3.setEnabled(False)
         self.lvl_1.circle_2.setEnabled(False)
         self.lvl_1.circle_3.setEnabled(False)
+        self.stopper = True
         if not self.lvl_1.circle_1.isEnabled():
             self.lvl_1.label_7.setStyleSheet("background-image: url(:/newPrefix/photo/Line 4.2.png);")
             self.lvl_1.label_6.setStyleSheet("background-image: url(:/newPrefix/photo/Line 3.2.png);")
@@ -135,13 +141,18 @@ class Level1Window(QtWidgets.QMainWindow):
 
 
     def Connect_Points_4(self):
-        self.lvl_1.circle_4.setEnabled(False)
-        if not self.lvl_1.circle_3.isEnabled():
-            self.lvl_1.label_3.setStyleSheet("background-image: url(:/newPrefix/photo/Line 1.2.png);")
-            self.lvl_1.label_5.setStyleSheet("background-image: url(:/newPrefix/photo/Line 2.2.png);")
+        if not self.stopper:
+            return
+        else:
+            self.lvl_1.circle_4.setEnabled(False)
+            if not self.lvl_1.circle_3.isEnabled():
+                self.lvl_1.label_3.setStyleSheet("background-image: url(:/newPrefix/photo/Line 1.2.png);")
+                self.lvl_1.label_5.setStyleSheet("background-image: url(:/newPrefix/photo/Line 2.2.png);")
+            self.stopper = False
 
 
     def restart(self):
+        self.stopper = True
         self.lvl_1.circle_1.setEnabled(True)
         self.lvl_1.circle_2.setEnabled(True)
         self.lvl_1.circle_3.setEnabled(True)
@@ -170,6 +181,53 @@ class Level2Window(QtWidgets.QMainWindow):
 
         self.lvl_2.pushButton.clicked.connect(self.go_home)
         self.lvl_2.pushButton_2.clicked.connect(self.go_back)
+        self.lvl_2.pushButton_3.clicked.connect(self.restart)
+        self.lvl_2.circle_1.clicked.connect(self.Connect_Points_1)
+        self.lvl_2.circle_2.clicked.connect(self.Connect_Points_2)
+        self.lvl_2.circle_3.clicked.connect(self.Connect_Points_3)
+        self.lvl_2.circle_4.clicked.connect(self.Connect_Points_4)
+        self.lvl_2.circle_5.clicked.connect(self.Connect_Points_5)
+        self.lvl_2.circle_6.clicked.connect(self.Connect_Points_6)
+        self.stopper = True
+
+
+    def Connect_Points_1(self):
+        self.lvl_2.circle_1.setEnabled(False)
+        if not self.lvl_2.circle_2.isEnabled():
+            self.lvl_2.label_4.setStyleSheet("background-image: url(:/newPrefix/photo/Line2 1.2.png);")
+            self.lvl_2.label_5.setStyleSheet("background-image: url(:/newPrefix/photo/Line2 2.2.png);")
+
+    def Connect_Points_2(self):
+        self.lvl_2.circle_2.setEnabled(False)
+        self.lvl_2.circle_10.setEnabled(False)
+
+    def Connect_Points_3(self):
+        self.lvl_2.circle_3.setEnabled(False)
+        self.lvl_2.circle_9.setEnabled(False)
+
+    def Connect_Points_4(self):
+        self.lvl_2.circle_4.setEnabled(False)
+        self.lvl_2.circle_8.setEnabled(False)
+
+    def Connect_Points_5(self):
+        self.lvl_2.circle_5.setEnabled(False)
+        self.lvl_2.circle_7.setEnabled(False)
+
+    def Connect_Points_6(self):
+        self.lvl_2.circle_6.setEnabled(False)
+
+    def restart(self):
+        self.stopper = True
+        self.lvl_2.circle_1.setEnabled(True)
+        self.lvl_2.circle_2.setEnabled(True)
+        self.lvl_2.circle_3.setEnabled(True)
+        self.lvl_2.circle_4.setEnabled(True)
+        self.lvl_2.circle_5.setEnabled(True)
+        self.lvl_2.circle_6.setEnabled(True)
+        self.lvl_2.circle_7.setEnabled(True)
+        self.lvl_2.circle_8.setEnabled(True)
+        self.lvl_2.circle_9.setEnabled(True)
+        self.lvl_2.circle_10.setEnabled(True)
 
     def go_home(self):
         self.main_window = MainWindow()
@@ -189,6 +247,40 @@ class Level3Window(QtWidgets.QMainWindow):
 
         self.lvl_3.pushButton.clicked.connect(self.go_home)
         self.lvl_3.pushButton_2.clicked.connect(self.go_back)
+        self.lvl_3.pushButton_3.clicked.connect(self.restart)
+        self.lvl_3.circle_1.clicked.connect(self.Connect_Points_1)
+        self.lvl_3.circle_3.clicked.connect(self.Connect_Points_3)
+        self.lvl_3.circle_4.clicked.connect(self.Connect_Points_4)
+        self.lvl_3.circle_6.clicked.connect(self.Connect_Points_6)
+        self.lvl_3.circle_7.clicked.connect(self.Connect_Points_7)
+
+
+    def Connect_Points_1(self):
+        self.lvl_3.circle_1.setEnabled(False)
+        self.lvl_3.circle_2.setEnabled(False)
+    def Connect_Points_3(self):
+        self.lvl_3.circle_3.setEnabled(False)
+
+    def Connect_Points_4(self):
+        self.lvl_3.circle_4.setEnabled(False)
+        self.lvl_3.circle_5.setEnabled(False)
+
+    def Connect_Points_6(self):
+        self.lvl_3.circle_6.setEnabled(False)
+
+    def Connect_Points_7(self):
+        self.lvl_3.circle_7.setEnabled(False)
+        self.lvl_3.circle_8.setEnabled(False)
+
+    def restart(self):
+        self.lvl_3.circle_1.setEnabled(True)
+        self.lvl_3.circle_2.setEnabled(True)
+        self.lvl_3.circle_3.setEnabled(True)
+        self.lvl_3.circle_4.setEnabled(True)
+        self.lvl_3.circle_5.setEnabled(True)
+        self.lvl_3.circle_6.setEnabled(True)
+        self.lvl_3.circle_7.setEnabled(True)
+        self.lvl_3.circle_8.setEnabled(True)
 
     def go_home(self):
         self.main_window = MainWindow()
@@ -208,6 +300,43 @@ class Level4Window(QtWidgets.QMainWindow):
 
         self.lvl_4.pushButton.clicked.connect(self.go_home)
         self.lvl_4.pushButton_2.clicked.connect(self.go_back)
+        self.lvl_4.pushButton_3.clicked.connect(self.restart)
+        self.lvl_4.circle_1.clicked.connect(self.Connect_Points_1)
+        self.lvl_4.circle_2.clicked.connect(self.Connect_Points_2)
+        self.lvl_4.circle_3.clicked.connect(self.Connect_Points_3)
+        self.lvl_4.circle_8.clicked.connect(self.Connect_Points_8)
+        self.lvl_4.circle_9.clicked.connect(self.Connect_Points_9)
+
+    def Connect_Points_1(self):
+        self.lvl_4.circle_1.setEnabled(False)
+        self.lvl_4.circle_5.setEnabled(False)
+
+    def Connect_Points_2(self):
+        self.lvl_4.circle_2.setEnabled(False)
+        self.lvl_4.circle_4.setEnabled(False)
+
+    def Connect_Points_3(self):
+        self.lvl_4.circle_3.setEnabled(False)
+
+    def Connect_Points_8(self):
+        self.lvl_4.circle_7.setEnabled(False)
+        self.lvl_4.circle_8.setEnabled(False)
+
+    def Connect_Points_9(self):
+        self.lvl_4.circle_6.setEnabled(False)
+        self.lvl_4.circle_9.setEnabled(False)
+
+    def restart(self):
+        self.lvl_4.circle_1.setEnabled(True)
+        self.lvl_4.circle_2.setEnabled(True)
+        self.lvl_4.circle_3.setEnabled(True)
+        self.lvl_4.circle_4.setEnabled(True)
+        self.lvl_4.circle_5.setEnabled(True)
+        self.lvl_4.circle_6.setEnabled(True)
+        self.lvl_4.circle_7.setEnabled(True)
+        self.lvl_4.circle_8.setEnabled(True)
+        self.lvl_4.circle_9.setEnabled(True)
+
 
     def go_home(self):
         self.main_window = MainWindow()
@@ -227,6 +356,49 @@ class Level5Window(QtWidgets.QMainWindow):
 
         self.lvl_5.pushButton.clicked.connect(self.go_home)
         self.lvl_5.pushButton_2.clicked.connect(self.go_back)
+        self.lvl_5.pushButton_3.clicked.connect(self.restart)
+        self.lvl_5.circle_1.clicked.connect(self.Connect_Points_1)
+        self.lvl_5.circle_2.clicked.connect(self.Connect_Points_2)
+        self.lvl_5.circle_3.clicked.connect(self.Connect_Points_3)
+        self.lvl_5.circle_4.clicked.connect(self.Connect_Points_4)
+        self.lvl_5.circle_5.clicked.connect(self.Connect_Points_5)
+        self.lvl_5.circle_6.clicked.connect(self.Connect_Points_6)
+
+
+    def Connect_Points_1(self):
+        self.lvl_5.circle_1.setEnabled(False)
+        self.lvl_5.circle_10.setEnabled(False)
+
+    def Connect_Points_2(self):
+        self.lvl_5.circle_2.setEnabled(False)
+        self.lvl_5.circle_9.setEnabled(False)
+
+    def Connect_Points_3(self):
+        self.lvl_5.circle_3.setEnabled(False)
+
+    def Connect_Points_4(self):
+        self.lvl_5.circle_4.setEnabled(False)
+        self.lvl_5.circle_8.setEnabled(False)
+
+    def Connect_Points_5(self):
+        self.lvl_5.circle_5.setEnabled(False)
+        self.lvl_5.circle_7.setEnabled(False)
+
+    def Connect_Points_6(self):
+        self.lvl_5.circle_6.setEnabled(False)
+
+    def restart(self):
+        self.lvl_5.circle_1.setEnabled(True)
+        self.lvl_5.circle_2.setEnabled(True)
+        self.lvl_5.circle_3.setEnabled(True)
+        self.lvl_5.circle_4.setEnabled(True)
+        self.lvl_5.circle_5.setEnabled(True)
+        self.lvl_5.circle_6.setEnabled(True)
+        self.lvl_5.circle_7.setEnabled(True)
+        self.lvl_5.circle_8.setEnabled(True)
+        self.lvl_5.circle_9.setEnabled(True)
+        self.lvl_5.circle_10.setEnabled(True)
+
 
     def go_home(self):
         self.main_window = MainWindow()
@@ -246,6 +418,45 @@ class Level6Window(QtWidgets.QMainWindow):
 
         self.lvl_6.pushButton.clicked.connect(self.go_home)
         self.lvl_6.pushButton_2.clicked.connect(self.go_back)
+        self.lvl_6.pushButton_3.clicked.connect(self.restart)
+        self.lvl_6.circle_1.clicked.connect(self.Connect_Points_1)
+        self.lvl_6.circle_2.clicked.connect(self.Connect_Points_2)
+        self.lvl_6.circle_3.clicked.connect(self.Connect_Points_3)
+        self.lvl_6.circle_4.clicked.connect(self.Connect_Points_4)
+        self.lvl_6.circle_5.clicked.connect(self.Connect_Points_5)
+        self.lvl_6.circle_6.clicked.connect(self.Connect_Points_6)
+
+    def Connect_Points_1(self):
+        self.lvl_6.circle_1.setEnabled(False)
+
+    def Connect_Points_2(self):
+        self.lvl_6.circle_2.setEnabled(False)
+        self.lvl_6.circle_9.setEnabled(False)
+
+    def Connect_Points_3(self):
+        self.lvl_6.circle_3.setEnabled(False)
+        self.lvl_6.circle_8.setEnabled(False)
+
+    def Connect_Points_4(self):
+        self.lvl_6.circle_4.setEnabled(False)
+        self.lvl_6.circle_7.setEnabled(False)
+
+    def Connect_Points_5(self):
+        self.lvl_6.circle_5.setEnabled(False)
+
+    def Connect_Points_6(self):
+        self.lvl_6.circle_6.setEnabled(False)
+
+    def restart(self):
+        self.lvl_6.circle_1.setEnabled(True)
+        self.lvl_6.circle_2.setEnabled(True)
+        self.lvl_6.circle_3.setEnabled(True)
+        self.lvl_6.circle_4.setEnabled(True)
+        self.lvl_6.circle_5.setEnabled(True)
+        self.lvl_6.circle_6.setEnabled(True)
+        self.lvl_6.circle_7.setEnabled(True)
+        self.lvl_6.circle_8.setEnabled(True)
+        self.lvl_6.circle_9.setEnabled(True)
 
     def go_home(self):
         self.main_window = MainWindow()
@@ -265,6 +476,40 @@ class Level7Window(QtWidgets.QMainWindow):
 
         self.lvl_7.pushButton.clicked.connect(self.go_home)
         self.lvl_7.pushButton_2.clicked.connect(self.go_back)
+        self.lvl_7.restart_btn.clicked.connect(self.restart)
+        self.lvl_7.circle_1.clicked.connect(self.Connect_Points_1)
+        self.lvl_7.circle_2.clicked.connect(self.Connect_Points_2)
+        self.lvl_7.circle_3.clicked.connect(self.Connect_Points_3)
+        self.lvl_7.circle_4.clicked.connect(self.Connect_Points_4)
+        self.lvl_7.circle_5.clicked.connect(self.Connect_Points_5)
+
+    def Connect_Points_1(self):
+        self.lvl_7.circle_1.setEnabled(False)
+
+    def Connect_Points_2(self):
+        self.lvl_7.circle_2.setEnabled(False)
+        self.lvl_7.circle_7.setEnabled(False)
+
+    def Connect_Points_3(self):
+        self.lvl_7.circle_3.setEnabled(False)
+        self.lvl_7.circle_8.setEnabled(False)
+
+    def Connect_Points_4(self):
+        self.lvl_7.circle_4.setEnabled(False)
+        self.lvl_7.circle_6.setEnabled(False)
+
+    def Connect_Points_5(self):
+        self.lvl_7.circle_5.setEnabled(False)
+
+    def restart(self):
+        self.lvl_7.circle_1.setEnabled(True)
+        self.lvl_7.circle_2.setEnabled(True)
+        self.lvl_7.circle_3.setEnabled(True)
+        self.lvl_7.circle_4.setEnabled(True)
+        self.lvl_7.circle_5.setEnabled(True)
+        self.lvl_7.circle_6.setEnabled(True)
+        self.lvl_7.circle_7.setEnabled(True)
+        self.lvl_7.circle_8.setEnabled(True)
 
     def go_home(self):
         self.main_window = MainWindow()
@@ -284,6 +529,63 @@ class Level8Window(QtWidgets.QMainWindow):
 
         self.lvl_8.pushButton.clicked.connect(self.go_home)
         self.lvl_8.pushButton_2.clicked.connect(self.go_back)
+        self.lvl_8.pushButton_3.clicked.connect(self.restart)
+        self.lvl_8.circle_1.clicked.connect(self.Connect_Points_1)
+        self.lvl_8.circle_2.clicked.connect(self.Connect_Points_2)
+        self.lvl_8.circle_3.clicked.connect(self.Connect_Points_3)
+        self.lvl_8.circle_4.clicked.connect(self.Connect_Points_4)
+        self.lvl_8.circle_5.clicked.connect(self.Connect_Points_5)
+        self.lvl_8.circle_6.clicked.connect(self.Connect_Points_6)
+        self.lvl_8.circle_7.clicked.connect(self.Connect_Points_7)
+        self.lvl_8.circle_8.clicked.connect(self.Connect_Points_8)
+
+    def Connect_Points_1(self):
+        self.lvl_8.circle_1.setEnabled(False)
+        self.lvl_8.circle_13.setEnabled(False)
+
+    def Connect_Points_2(self):
+        self.lvl_8.circle_2.setEnabled(False)
+        self.lvl_8.circle_14.setEnabled(False)
+
+    def Connect_Points_3(self):
+        self.lvl_8.circle_3.setEnabled(False)
+        self.lvl_8.circle_15.setEnabled(False)
+
+    def Connect_Points_4(self):
+        self.lvl_8.circle_4.setEnabled(False)
+        self.lvl_8.circle_12.setEnabled(False)
+
+    def Connect_Points_5(self):
+        self.lvl_8.circle_5.setEnabled(False)
+        self.lvl_8.circle_11.setEnabled(False)
+
+    def Connect_Points_6(self):
+        self.lvl_8.circle_6.setEnabled(False)
+        self.lvl_8.circle_10.setEnabled(False)
+
+    def Connect_Points_7(self):
+        self.lvl_8.circle_7.setEnabled(False)
+        self.lvl_8.circle_9.setEnabled(False)
+
+    def Connect_Points_8(self):
+        self.lvl_8.circle_8.setEnabled(False)
+
+    def restart(self):
+        self.lvl_8.circle_1.setEnabled(True)
+        self.lvl_8.circle_2.setEnabled(True)
+        self.lvl_8.circle_3.setEnabled(True)
+        self.lvl_8.circle_4.setEnabled(True)
+        self.lvl_8.circle_5.setEnabled(True)
+        self.lvl_8.circle_6.setEnabled(True)
+        self.lvl_8.circle_7.setEnabled(True)
+        self.lvl_8.circle_8.setEnabled(True)
+        self.lvl_8.circle_9.setEnabled(True)
+        self.lvl_8.circle_10.setEnabled(True)
+        self.lvl_8.circle_11.setEnabled(True)
+        self.lvl_8.circle_12.setEnabled(True)
+        self.lvl_8.circle_13.setEnabled(True)
+        self.lvl_8.circle_14.setEnabled(True)
+        self.lvl_8.circle_15.setEnabled(True)
 
     def go_home(self):
         self.main_window = MainWindow()

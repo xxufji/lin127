@@ -63,19 +63,6 @@ class Ui_Level1Window(object):
 "border-ruds: 9px;}")
         self.pushButton_3.setText("")
         self.pushButton_3.setObjectName("pushButton_3")
-        self.pushButton_4 = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton_4.setGeometry(QtCore.QRect(1300, 150, 128, 119))
-        self.pushButton_4.setStyleSheet("QPushButton{\n"
-"border: none;\n"
-"    background-image: url(:/newPrefix/photo/otmena.png);\n"
-"border-ruds: 9px;}\n"
-"\n"
-"QPushButton:hover{\n"
-"background-image: url(:/newPrefix/photo/otmena2.png);\n"
-"border: none;\n"
-"border-ruds: 9px;}")
-        self.pushButton_4.setText("")
-        self.pushButton_4.setObjectName("pushButton_4")
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(390, 50, 551, 61))
         self.label.setStyleSheet("background-image: url(:/newPrefix/photo/уровень.png);")
@@ -192,7 +179,6 @@ class Ui_Level1Window(object):
         self.pushButton.raise_()
         self.pushButton_2.raise_()
         self.pushButton_3.raise_()
-        self.pushButton_4.raise_()
         self.label.raise_()
         self.label_2.raise_()
         self.label_4.raise_()
