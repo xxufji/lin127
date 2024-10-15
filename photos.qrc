@@ -1,5 +1,23 @@
 <RCC>
   <qresource prefix="newPrefix">
+    <file>photo/Line2 2.2.png</file>
+    <file>photo/Line2 2.png</file>
+    <file>photo/Line2 3.2.png</file>
+    <file>photo/Line2 3.png</file>
+    <file>photo/Line2 4.2.png</file>
+    <file>photo/Line2 4.png</file>
+    <file>photo/Line2 5.2.png</file>
+    <file>photo/Line2 5.png</file>
+    <file>photo/Line2 6.2.png</file>
+    <file>photo/Line2 6.png</file>
+    <file>photo/Line2 7.2.png</file>
+    <file>photo/Line2 7.png</file>
+    <file>photo/Line2 8.2.png</file>
+    <file>photo/Line2 8.png</file>
+    <file>photo/Line2 9.2.png</file>
+    <file>photo/Line2 9.png</file>
+    <file>photo/Line2 10.2.png</file>
+    <file>photo/Line2 10.png</file>
     <file>photo/Line8 7.png</file>
     <file>photo/Line8 7.png</file>
     <file>photo/Line8 1.2.png</file>
@@ -172,24 +190,15 @@
     <file>photo/figura_7.png</file>
     <file>photo/lvl7.png</file>
     <file>photo/lvl6.png</file>
-    <file>photo/figura-6.png</file>
-    <file>photo/figura_5.png</file>
     <file>photo/lvl5.png</file>
     <file>photo/lvl4.png</file>
-    <file>photo/figura_4.png</file>
-    <file>photo/figura_3.png</file>
     <file>photo/lvl3.png</file>
-    <file>photo/figura_2.png</file>
     <file>photo/lvl1.png</file>
     <file>photo/lvl2.png</file>
     <file>photo/Ellipse 1.png</file>
     <file>photo/pravila.png</file>
     <file>photo/Ellipse 2.png</file>
-    <file>photo/figura_1.png</file>
-    <file>photo/счёт.png</file>
     <file>photo/уровень.png</file>
-    <file>photo/otmena.png</file>
-    <file>photo/otmena2.png</file>
     <file>photo/zanovo.png</file>
     <file>photo/zanovo2.png</file>
     <file>photo/fon_lvl.png</file>
