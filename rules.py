@@ -21,19 +21,21 @@ class Ui_RulesWindow(object):
 "}")
         self.centralwidget = QtWidgets.QWidget(RulesWindow)
         self.centralwidget.setObjectName("centralwidget")
-        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
-        self.pushButton.setGeometry(QtCore.QRect(10, 20, 189, 111))
-        self.pushButton.setStyleSheet("QPushButton{\n"
-"background-image: url(:/newPrefix/photo/back.png);\n"
+        self.button_home = QtWidgets.QPushButton(self.centralwidget)
+        self.button_home.setGeometry(QtCore.QRect(20, 30, 128, 119))
+        self.button_home.setMinimumSize(QtCore.QSize(128, 0))
+        self.button_home.setMaximumSize(QtCore.QSize(128, 122))
+        self.button_home.setStyleSheet("QPushButton{\n"
+"background-image: url(:/newPrefix/photo/home.png);\n"
 "border: none;\n"
 "border-ruds: 9px;}\n"
 "\n"
 "QPushButton:hover{\n"
-"background-image: url(:/newPrefix/photo/back2.png);\n"
+"background-image: url(:/newPrefix/photo/home2.png);\n"
 "border: none;\n"
 "border-ruds: 9px;}")
-        self.pushButton.setText("")
-        self.pushButton.setObjectName("pushButton")
+        self.button_home.setText("")
+        self.button_home.setObjectName("button_home")
         RulesWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(RulesWindow)
