@@ -17,6 +17,7 @@ class MainWindow(QtWidgets.QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
         self.move(250, -50)
+        self.setFixedSize(1450, 1000)
         self.menu = Ui_MainWindow()
         self.menu.setupUi(self)
 
@@ -24,20 +25,16 @@ class MainWindow(QtWidgets.QMainWindow):
         self.menu.pushButton_2.clicked.connect(self.open_settings)
         self.menu.pushButton_3.clicked.connect(self.open_levels_window)
         self.menu.pushButton_4.clicked.connect(self.open_rules)
-
     def close_application(self):
         sys.exit()
-
     def open_levels_window(self):
         self.levels_window = LevelsWindow()
         self.levels_window.show()
         self.close()
-
     def open_settings(self):
         self.settings_window = SettingsWindow()
         self.settings_window.show()
         self.close()
-
     def open_rules(self):
         self.rules_window = RulesWindow()
         self.rules_window.show()
@@ -46,6 +43,7 @@ class LevelsWindow(QtWidgets.QMainWindow):
     def __init__(self):
         super(LevelsWindow, self).__init__()
         self.move(250, -42)
+        self.setFixedSize(1450, 1000)
         self.levels = Ui_LevelsWindow()
         self.levels.setupUi(self)
 
@@ -58,47 +56,38 @@ class LevelsWindow(QtWidgets.QMainWindow):
         self.levels.pushButton_7.clicked.connect(self.go_lvl6)
         self.levels.pushButton_8.clicked.connect(self.go_lvl7)
         self.levels.pushButton_9.clicked.connect(self.go_lvl8)
-
     def go_home(self):
         self.main_window = MainWindow()
         self.main_window.show()
         self.close()
-
     def go_lvl1(self):
         self.main_window = Level1Window()
         self.main_window.show()
         self.close()
-
     def go_lvl2(self):
         self.main_window = Level2Window()
         self.main_window.show()
         self.close()
-
     def go_lvl3(self):
         self.main_window = Level3Window()
         self.main_window.show()
         self.close()
-
     def go_lvl4(self):
         self.main_window = Level4Window()
         self.main_window.show()
         self.close()
-
     def go_lvl5(self):
         self.main_window = Level5Window()
         self.main_window.show()
         self.close()
-
     def go_lvl6(self):
         self.main_window = Level6Window()
         self.main_window.show()
         self.close()
-
     def go_lvl7(self):
         self.main_window = Level7Window()
         self.main_window.show()
         self.close()
-
     def go_lvl8(self):
         self.main_window = Level8Window()
         self.main_window.show()
@@ -107,6 +96,7 @@ class Level1Window(QtWidgets.QMainWindow):
     def __init__(self):
         super(Level1Window, self).__init__()
         self.move(250, -40)
+        self.setFixedSize(1450, 1000)
         self.lvl_1 = Ui_Level1Window()
         self.lvl_1.setupUi(self)
 
@@ -117,7 +107,6 @@ class Level1Window(QtWidgets.QMainWindow):
         self.lvl_1.circle_3.clicked.connect(self.Connect_Points_3)
         self.lvl_1.circle_4.clicked.connect(self.Connect_Points_4)
         self.stopper = True
-
     def Connect_Points_1(self):
         if not self.stopper:
             return
@@ -130,7 +119,6 @@ class Level1Window(QtWidgets.QMainWindow):
                 self.lvl_1.label_7.setStyleSheet("background-image: url(:/newPrefix/photo/Line 4.2.png);")
                 self.lvl_1.label_6.setStyleSheet("background-image: url(:/newPrefix/photo/Line 3.2.png);")
             self.stopper = False
-
     def Connect_Points_3(self):
         self.lvl_1.circle_3.setEnabled(False)
         self.lvl_1.circle_2.setEnabled(False)
@@ -141,7 +129,6 @@ class Level1Window(QtWidgets.QMainWindow):
         if not self.lvl_1.circle_4.isEnabled():
             self.lvl_1.label_3.setStyleSheet("background-image: url(:/newPrefix/photo/Line 1.2.png);")
             self.lvl_1.label_5.setStyleSheet("background-image: url(:/newPrefix/photo/Line 2.2.png);")
-
     def Connect_Points_4(self):
         if not self.stopper:
             return
@@ -154,7 +141,6 @@ class Level1Window(QtWidgets.QMainWindow):
                 self.lvl_1.label_3.setStyleSheet("background-image: url(:/newPrefix/photo/Line 1.2.png);")
                 self.lvl_1.label_5.setStyleSheet("background-image: url(:/newPrefix/photo/Line 2.2.png);")
             self.stopper = False
-
     def restart(self):
         self.stopper = True
         self.lvl_1.circle_1.setEnabled(True)
@@ -165,13 +151,10 @@ class Level1Window(QtWidgets.QMainWindow):
         self.lvl_1.label_6.setStyleSheet("background-image: url(:/newPrefix/photo/Line 3.png);")
         self.lvl_1.label_3.setStyleSheet("background-image: url(:/newPrefix/photo/Line 1.png);")
         self.lvl_1.label_5.setStyleSheet("background-image: url(:/newPrefix/photo/Line 2.png);")
-
-
     def go_home(self):
         self.main_window = MainWindow()
         self.main_window.show()
         self.close()
-
     def go_back(self):
         self.main_window = LevelsWindow()
         self.main_window.show()
@@ -180,6 +163,7 @@ class Level2Window(QtWidgets.QMainWindow):
     def __init__(self):
         super(Level2Window, self).__init__()
         self.move(250, -40)
+        self.setFixedSize(1450, 1000)
         self.lvl_2 = Ui_Level2Window()
         self.lvl_2.setupUi(self)
 
@@ -193,7 +177,6 @@ class Level2Window(QtWidgets.QMainWindow):
         self.lvl_2.circle_5.clicked.connect(self.Connect_Points_5)
         self.lvl_2.circle_6.clicked.connect(self.Connect_Points_6)
         self.stopper = True
-
     def Connect_Points_1(self):
         self.lvl_2.circle_3.blockSignals(True)
         self.lvl_2.circle_4.blockSignals(True)
@@ -204,12 +187,8 @@ class Level2Window(QtWidgets.QMainWindow):
         else:
             self.lvl_2.circle_1.setEnabled(False)
             if not self.lvl_2.circle_2.isEnabled():
-                self.main_window = LevelsWindow()
-                self.main_window.show()
-                self.close()
                 self.lvl_2.label_4.setStyleSheet("background-image: url(:/newPrefix/photo/Line2 1.2.png);")
                 self.lvl_2.label_5.setStyleSheet("background-image: url(:/newPrefix/photo/Line2 2.2.png);")
-
     def Connect_Points_2(self):
         self.lvl_2.circle_4.blockSignals(True)
         self.lvl_2.circle_5.blockSignals(True)
@@ -229,7 +208,6 @@ class Level2Window(QtWidgets.QMainWindow):
                 self.lvl_2.label_6.setStyleSheet("background-image: url(:/newPrefix/photo/Line2 3.2.png);")
                 self.lvl_2.label_7.setStyleSheet("background-image: url(:/newPrefix/photo/Line2 4.2.png);")
 
-
     def Connect_Points_3(self):
         self.lvl_2.circle_1.blockSignals(True)
         self.lvl_2.circle_5.blockSignals(True)
@@ -248,7 +226,6 @@ class Level2Window(QtWidgets.QMainWindow):
             if not self.lvl_2.circle_4.isEnabled():
                 self.lvl_2.label_8.setStyleSheet("background-image: url(:/newPrefix/photo/Line2 5.2.png);")
                 self.lvl_2.label_9.setStyleSheet("background-image: url(:/newPrefix/photo/Line2 6.2.png);")
-
     def Connect_Points_4(self):
         self.lvl_2.circle_1.blockSignals(True)
         self.lvl_2.circle_2.blockSignals(True)
@@ -268,8 +245,6 @@ class Level2Window(QtWidgets.QMainWindow):
                 self.lvl_2.label_10.setStyleSheet("background-image: url(:/newPrefix/photo/Line2 7.2.png);")
                 self.lvl_2.label_11.setStyleSheet("background-image: url(:/newPrefix/photo/Line2 8.2.png);")
         self.stopper = False
-
-
     def Connect_Points_5(self):
         self.lvl_2.circle_1.blockSignals(True)
         self.lvl_2.circle_2.blockSignals(True)
@@ -288,7 +263,6 @@ class Level2Window(QtWidgets.QMainWindow):
             if not self.lvl_2.circle_6.isEnabled():
                 self.lvl_2.label_12.setStyleSheet("background-image: url(:/newPrefix/photo/Line2 9.2.png);")
                 self.lvl_2.label_13.setStyleSheet("background-image: url(:/newPrefix/photo/Line2 10.2.png);")
-
     def Connect_Points_6(self):
         self.lvl_2.circle_1.blockSignals(True)
         self.lvl_2.circle_2.blockSignals(True)
@@ -300,13 +274,8 @@ class Level2Window(QtWidgets.QMainWindow):
             return
         else:
             if not self.lvl_2.circle_5.isEnabled():
-                self.main_window = LevelsWindow()
-                self.main_window.show()
-                self.close()
                 self.lvl_2.label_12.setStyleSheet("background-image: url(:/newPrefix/photo/Line2 9.2.png);")
                 self.lvl_2.label_13.setStyleSheet("background-image: url(:/newPrefix/photo/Line2 10.2.png);")
-
-
     def restart(self):
         self.stopper = True
         self.lvl_2.circle_1.setEnabled(True)
@@ -335,14 +304,10 @@ class Level2Window(QtWidgets.QMainWindow):
         self.lvl_2.label_11.setStyleSheet("background-image: url(:/newPrefix/photo/Line2 8.png);")
         self.lvl_2.label_12.setStyleSheet("background-image: url(:/newPrefix/photo/Line2 9.png);")
         self.lvl_2.label_13.setStyleSheet("background-image: url(:/newPrefix/photo/Line2 10.png);")
-
-
-
     def go_home(self):
         self.main_window = MainWindow()
         self.main_window.show()
         self.close()
-
     def go_back(self):
         self.main_window = LevelsWindow()
         self.main_window.show()
@@ -351,6 +316,7 @@ class Level3Window(QtWidgets.QMainWindow):
     def __init__(self):
         super(Level3Window, self).__init__()
         self.move(250, -40)
+        self.setFixedSize(1450, 1000)
         self.lvl_3 = Ui_Level3Window()
         self.lvl_3.setupUi(self)
 
@@ -363,7 +329,6 @@ class Level3Window(QtWidgets.QMainWindow):
         self.lvl_3.circle_6.clicked.connect(self.Connect_Points_6)
         self.lvl_3.circle_7.clicked.connect(self.Connect_Points_7)
         self.stopper = True
-
     def Connect_Points_1(self):
         self.lvl_3.circle_4.blockSignals(True)
         self.lvl_3.circle_6.blockSignals(True)
@@ -380,7 +345,6 @@ class Level3Window(QtWidgets.QMainWindow):
             if not self.lvl_3.circle_7.isEnabled():
                 self.lvl_3.label_11.setStyleSheet("background-image: url(:/newPrefix/photo/Line3 8.2.png);")
                 self.lvl_3.label_12.setStyleSheet("background-image: url(:/newPrefix/photo/Line3 8.2.png);")
-
     def Connect_Points_3(self):
         self.lvl_3.circle_6.blockSignals(True)
         self.lvl_3.circle_7.blockSignals(True)
@@ -397,8 +361,6 @@ class Level3Window(QtWidgets.QMainWindow):
             if not self.lvl_3.circle_4.isEnabled():
                 self.lvl_3.label_8.setStyleSheet("background-image: url(:/newPrefix/photo/Line3 5.2.png);")
                 self.lvl_3.label_9.setStyleSheet("background-image: url(:/newPrefix/photo/Line3 6.2.png);")
-
-
     def Connect_Points_4(self):
         self.lvl_3.circle_1.blockSignals(True)
         self.lvl_3.circle_7.blockSignals(True)
@@ -416,7 +378,6 @@ class Level3Window(QtWidgets.QMainWindow):
             if not self.lvl_3.circle_6.isEnabled():
                 self.lvl_3.label_4.setStyleSheet("background-image: url(:/newPrefix/photo/Line3 1.2.png);")
                 self.lvl_3.label_10.setStyleSheet("background-image: url(:/newPrefix/photo/Line3 7.2.png);")
-
     def Connect_Points_6(self):
         self.lvl_3.circle_1.blockSignals(True)
         self.lvl_3.circle_3.blockSignals(True)
@@ -427,12 +388,8 @@ class Level3Window(QtWidgets.QMainWindow):
             return
         else:
             if not self.lvl_3.circle_4.isEnabled():
-                self.main_window = LevelsWindow()
-                self.main_window.show()
-                self.close()
                 self.lvl_3.label_4.setStyleSheet("background-image: url(:/newPrefix/photo/Line3 1.2.png);")
                 self.lvl_3.label_10.setStyleSheet("background-image: url(:/newPrefix/photo/Line3 7.2.png);")
-
     def Connect_Points_7(self):
         self.lvl_3.circle_3.blockSignals(True)
         self.lvl_3.circle_4.blockSignals(True)
@@ -444,13 +401,8 @@ class Level3Window(QtWidgets.QMainWindow):
             return
         else:
             if not self.lvl_3.circle_1.isEnabled():
-                self.main_window = LevelsWindow()
-                self.main_window.show()
-                self.close()
                 self.lvl_3.label_11.setStyleSheet("background-image: url(:/newPrefix/photo/Line3 8.2.png);")
                 self.lvl_3.label_12.setStyleSheet("background-image: url(:/newPrefix/photo/Line3 8.2.png);")
-
-
     def restart(self):
         self.lvl_3.circle_1.setEnabled(True)
         self.lvl_3.circle_2.setEnabled(True)
@@ -473,12 +425,10 @@ class Level3Window(QtWidgets.QMainWindow):
         self.lvl_3.label_10.setStyleSheet("background-image: url(:/newPrefix/photo/Line3 7.png);")
         self.lvl_3.label_11.setStyleSheet("background-image: url(:/newPrefix/photo/Line3 8.png);")
         self.lvl_3.label_12.setStyleSheet("background-image: url(:/newPrefix/photo/Line3 8.png);")
-
     def go_home(self):
         self.main_window = MainWindow()
         self.main_window.show()
         self.close()
-
     def go_back(self):
         self.main_window = LevelsWindow()
         self.main_window.show()
@@ -487,6 +437,7 @@ class Level4Window(QtWidgets.QMainWindow):
     def __init__(self):
         super(Level4Window, self).__init__()
         self.move(250, -40)
+        self.setFixedSize(1450, 1000)
         self.lvl_4 = Ui_Level4Window()
         self.lvl_4.setupUi(self)
 
@@ -499,8 +450,6 @@ class Level4Window(QtWidgets.QMainWindow):
         self.lvl_4.circle_8.clicked.connect(self.Connect_Points_8)
         self.lvl_4.circle_9.clicked.connect(self.Connect_Points_9)
         self.stopper = True
-
-
     def Connect_Points_1(self):
         self.lvl_4.circle_3.blockSignals(True)
         self.lvl_4.circle_8.blockSignals(True)
@@ -511,13 +460,8 @@ class Level4Window(QtWidgets.QMainWindow):
             return
         else:
             if not self.lvl_4.circle_2.isEnabled():
-                self.main_window = LevelsWindow()
-                self.main_window.show()
-                self.close()
                 self.lvl_4.label_10.setStyleSheet("background-image: url(:/newPrefix/photo/Line4 7.2.png);")
                 self.lvl_4.label_11.setStyleSheet("background-image: url(:/newPrefix/photo/Line4 8.2.png);")
-
-
     def Connect_Points_2(self):
         self.lvl_4.circle_8.blockSignals(True)
         self.lvl_4.circle_9.blockSignals(True)
@@ -535,7 +479,6 @@ class Level4Window(QtWidgets.QMainWindow):
             if not self.lvl_4.circle_3.isEnabled():
                 self.lvl_4.label_8.setStyleSheet("background-image: url(:/newPrefix/photo/Line4 5.2.png);")
                 self.lvl_4.label_9.setStyleSheet("background-image: url(:/newPrefix/photo/Line4 6.2.png);")
-
     def Connect_Points_3(self):
         self.lvl_4.circle_1.blockSignals(True)
         self.lvl_4.circle_9.blockSignals(True)
@@ -552,7 +495,6 @@ class Level4Window(QtWidgets.QMainWindow):
             if not self.lvl_4.circle_8.isEnabled():
                 self.lvl_4.label_6.setStyleSheet("background-image: url(:/newPrefix/photo/Line4 3.2.png);")
                 self.lvl_4.label_4.setStyleSheet("background-image: url(:/newPrefix/photo/Line4 1.2.png);")
-
     def Connect_Points_8(self):
         self.lvl_4.circle_1.blockSignals(True)
         self.lvl_4.circle_2.blockSignals(True)
@@ -570,7 +512,6 @@ class Level4Window(QtWidgets.QMainWindow):
             if not self.lvl_4.circle_9.isEnabled():
                 self.lvl_4.label_5.setStyleSheet("background-image: url(:/newPrefix/photo/Line4 2.2.png);")
                 self.lvl_4.label_7.setStyleSheet("background-image: url(:/newPrefix/photo/Line4 4.2.png);")
-
     def Connect_Points_9(self):
         self.lvl_4.circle_1.blockSignals(True)
         self.lvl_4.circle_2.blockSignals(True)
@@ -582,12 +523,8 @@ class Level4Window(QtWidgets.QMainWindow):
             return
         else:
             if not self.lvl_4.circle_8.isEnabled():
-                self.main_window = LevelsWindow()
-                self.main_window.show()
-                self.close()
                 self.lvl_4.label_5.setStyleSheet("background-image: url(:/newPrefix/photo/Line4 2.2.png);")
                 self.lvl_4.label_7.setStyleSheet("background-image: url(:/newPrefix/photo/Line4 4.2.png);")
-
     def restart(self):
         self.lvl_4.circle_1.setEnabled(True)
         self.lvl_4.circle_2.setEnabled(True)
@@ -611,13 +548,10 @@ class Level4Window(QtWidgets.QMainWindow):
         self.lvl_4.label_4.setStyleSheet("background-image: url(:/newPrefix/photo/Line4 1.png);")
         self.lvl_4.label_5.setStyleSheet("background-image: url(:/newPrefix/photo/Line4 2.png);")
         self.lvl_4.label_7.setStyleSheet("background-image: url(:/newPrefix/photo/Line4 4.png);")
-
-
     def go_home(self):
         self.main_window = MainWindow()
         self.main_window.show()
         self.close()
-
     def go_back(self):
         self.main_window = LevelsWindow()
         self.main_window.show()
@@ -626,6 +560,7 @@ class Level5Window(QtWidgets.QMainWindow):
     def __init__(self):
         super(Level5Window, self).__init__()
         self.move(250, -40)
+        self.setFixedSize(1450, 1000)
         self.lvl_5 = Ui_Level5Window()
         self.lvl_5.setupUi(self)
 
@@ -639,7 +574,6 @@ class Level5Window(QtWidgets.QMainWindow):
         self.lvl_5.circle_5.clicked.connect(self.Connect_Points_5)
         self.lvl_5.circle_6.clicked.connect(self.Connect_Points_6)
         self.stopper = True
-
     def Connect_Points_1(self):
         self.lvl_5.circle_2.blockSignals(True)
         self.lvl_5.circle_4.blockSignals(True)
@@ -652,12 +586,8 @@ class Level5Window(QtWidgets.QMainWindow):
             return
         else:
             if not self.lvl_5.circle_3.isEnabled():
-                self.main_window = LevelsWindow()
-                self.main_window.show()
-                self.close()
                 self.lvl_5.label_4.setStyleSheet("background-image: url(:/newPrefix/photo/Line5 1.2.png);")
                 self.lvl_5.label_5.setStyleSheet("background-image: url(:/newPrefix/photo/Line5 2.2.png);")
-
     def Connect_Points_2(self):
         self.lvl_5.circle_1.blockSignals(True)
         self.lvl_5.circle_4.blockSignals(True)
@@ -676,7 +606,6 @@ class Level5Window(QtWidgets.QMainWindow):
             if not self.lvl_5.circle_5.isEnabled():
                 self.lvl_5.label_8.setStyleSheet("background-image: url(:/newPrefix/photo/Line5 5.2.png);")
                 self.lvl_5.label_9.setStyleSheet("background-image: url(:/newPrefix/photo/Line5 6.2.png);")
-
     def Connect_Points_3(self):
         self.lvl_5.circle_4.blockSignals(True)
         self.lvl_5.circle_5.blockSignals(True)
@@ -694,7 +623,6 @@ class Level5Window(QtWidgets.QMainWindow):
             if not self.lvl_5.circle_2.isEnabled():
                 self.lvl_5.label_6.setStyleSheet("background-image: url(:/newPrefix/photo/Line5 3.2.png);")
                 self.lvl_5.label_7.setStyleSheet("background-image: url(:/newPrefix/photo/Line5 4.2.png);")
-
     def Connect_Points_4(self):
         self.lvl_5.circle_1.blockSignals(True)
         self.lvl_5.circle_2.blockSignals(True)
@@ -708,12 +636,8 @@ class Level5Window(QtWidgets.QMainWindow):
             return
         else:
             if not self.lvl_5.circle_6.isEnabled():
-                self.main_window = LevelsWindow()
-                self.main_window.show()
-                self.close()
                 self.lvl_5.label_10.setStyleSheet("background-image: url(:/newPrefix/photo/Line5 7.2.png);")
                 self.lvl_5.label_11.setStyleSheet("background-image: url(:/newPrefix/photo/Line5 8.2.png);")
-
     def Connect_Points_5(self):
         self.lvl_5.circle_1.blockSignals(True)
         self.lvl_5.circle_3.blockSignals(True)
@@ -732,8 +656,6 @@ class Level5Window(QtWidgets.QMainWindow):
             if not self.lvl_5.circle_6.isEnabled():
                 self.lvl_5.label_12.setStyleSheet("background-image: url(:/newPrefix/photo/Line5 9.2.png);")
                 self.lvl_5.label_13.setStyleSheet("background-image: url(:/newPrefix/photo/Line5 10.2.png);")
-
-
     def Connect_Points_6(self):
         self.lvl_5.circle_1.blockSignals(True)
         self.lvl_5.circle_2.blockSignals(True)
@@ -751,7 +673,6 @@ class Level5Window(QtWidgets.QMainWindow):
             if not self.lvl_5.circle_5.isEnabled():
                 self.lvl_5.label_12.setStyleSheet("background-image: url(:/newPrefix/photo/Line5 9.2.png);")
                 self.lvl_5.label_13.setStyleSheet("background-image: url(:/newPrefix/photo/Line5 10.2.png);")
-
     def restart(self):
         self.lvl_5.circle_1.setEnabled(True)
         self.lvl_5.circle_2.setEnabled(True)
@@ -779,13 +700,10 @@ class Level5Window(QtWidgets.QMainWindow):
         self.lvl_5.label_11.setStyleSheet("background-image: url(:/newPrefix/photo/Line5 8.png);")
         self.lvl_5.label_12.setStyleSheet("background-image: url(:/newPrefix/photo/Line5 9.png);")
         self.lvl_5.label_13.setStyleSheet("background-image: url(:/newPrefix/photo/Line5 10.png);")
-
-
     def go_home(self):
         self.main_window = MainWindow()
         self.main_window.show()
         self.close()
-
     def go_back(self):
         self.main_window = LevelsWindow()
         self.main_window.show()
@@ -794,6 +712,7 @@ class Level6Window(QtWidgets.QMainWindow):
     def __init__(self):
         super(Level6Window, self).__init__()
         self.move(250, -40)
+        self.setFixedSize(1450, 1000)
         self.lvl_6 = Ui_Level6Window()
         self.lvl_6.setupUi(self)
 
@@ -807,7 +726,6 @@ class Level6Window(QtWidgets.QMainWindow):
         self.lvl_6.circle_5.clicked.connect(self.Connect_Points_5)
         self.lvl_6.circle_6.clicked.connect(self.Connect_Points_6)
         self.stopper = True
-
     def Connect_Points_1(self):
         self.lvl_6.circle_3.blockSignals(True)
         self.lvl_6.circle_5.blockSignals(True)
@@ -825,7 +743,6 @@ class Level6Window(QtWidgets.QMainWindow):
             if not self.lvl_6.circle_2.isEnabled():
                 self.lvl_6.label_4.setStyleSheet("background-image: url(:/newPrefix/photo/Line6 1.2.png);")
                 self.lvl_6.label_5.setStyleSheet("background-image: url(:/newPrefix/photo/Line6 2.2.png);")
-
     def Connect_Points_2(self):
         self.lvl_6.circle_4.blockSignals(True)
         self.lvl_6.circle_5.blockSignals(True)
@@ -844,8 +761,6 @@ class Level6Window(QtWidgets.QMainWindow):
             if not self.lvl_6.circle_1.isEnabled():
                 self.lvl_6.label_4.setStyleSheet("background-image: url(:/newPrefix/photo/Line6 1.2.png);")
                 self.lvl_6.label_5.setStyleSheet("background-image: url(:/newPrefix/photo/Line6 2.2.png);")
-
-
     def Connect_Points_3(self):
         self.lvl_6.circle_1.blockSignals(True)
         self.lvl_6.circle_4.blockSignals(True)
@@ -864,8 +779,6 @@ class Level6Window(QtWidgets.QMainWindow):
             if not self.lvl_6.circle_5.isEnabled():
                 self.lvl_6.label_9.setStyleSheet("background-image: url(:/newPrefix/photo/Line6 6.2.png);")
                 self.lvl_6.label_10.setStyleSheet("background-image: url(:/newPrefix/photo/Line6 7.2.png);")
-
-
     def Connect_Points_4(self):
         self.lvl_6.circle_2.blockSignals(True)
         self.lvl_6.circle_3.blockSignals(True)
@@ -884,7 +797,6 @@ class Level6Window(QtWidgets.QMainWindow):
             if not self.lvl_6.circle_6.isEnabled():
                 self.lvl_6.label_8.setStyleSheet("background-image: url(:/newPrefix/photo/Line6 5.2.png);")
                 self.lvl_6.label_11.setStyleSheet("background-image: url(:/newPrefix/photo/Line6 8.2.png);")
-
     def Connect_Points_5(self):
         self.lvl_6.circle_1.blockSignals(True)
         self.lvl_6.circle_2.blockSignals(True)
@@ -897,12 +809,8 @@ class Level6Window(QtWidgets.QMainWindow):
             return
         else:
             if not self.lvl_6.circle_3.isEnabled():
-                self.main_window = LevelsWindow()
-                self.main_window.show()
-                self.close()
                 self.lvl_6.label_9.setStyleSheet("background-image: url(:/newPrefix/photo/Line6 6.2.png);")
                 self.lvl_6.label_10.setStyleSheet("background-image: url(:/newPrefix/photo/Line6 7.2.png);")
-
     def Connect_Points_6(self):
         self.lvl_6.circle_1.blockSignals(True)
         self.lvl_6.circle_2.blockSignals(True)
@@ -915,12 +823,8 @@ class Level6Window(QtWidgets.QMainWindow):
             return
         else:
             if not self.lvl_6.circle_4.isEnabled():
-                self.main_window = LevelsWindow()
-                self.main_window.show()
-                self.close()
                 self.lvl_6.label_8.setStyleSheet("background-image: url(:/newPrefix/photo/Line6 5.2.png);")
                 self.lvl_6.label_11.setStyleSheet("background-image: url(:/newPrefix/photo/Line6 8.2.png);")
-
     def restart(self):
         self.lvl_6.circle_1.setEnabled(True)
         self.lvl_6.circle_2.setEnabled(True)
@@ -947,12 +851,10 @@ class Level6Window(QtWidgets.QMainWindow):
         self.lvl_6.label_10.setStyleSheet("background-image: url(:/newPrefix/photo/Line6 7.png);")
         self.lvl_6.label_8.setStyleSheet("background-image: url(:/newPrefix/photo/Line6 5.png);")
         self.lvl_6.label_11.setStyleSheet("background-image: url(:/newPrefix/photo/Line6 8.png);")
-
     def go_home(self):
         self.main_window = MainWindow()
         self.main_window.show()
         self.close()
-
     def go_back(self):
         self.main_window = LevelsWindow()
         self.main_window.show()
@@ -961,6 +863,7 @@ class Level7Window(QtWidgets.QMainWindow):
     def __init__(self):
         super(Level7Window, self).__init__()
         self.move(250, -40)
+        self.setFixedSize(1450, 1000)
         self.lvl_7 = Ui_Level7Window()
         self.lvl_7.setupUi(self)
 
@@ -989,7 +892,6 @@ class Level7Window(QtWidgets.QMainWindow):
             if not self.lvl_7.circle_4.isEnabled():
                 self.lvl_7.label_7.setStyleSheet("background-image: url(:/newPrefix/photo/Line7 4.2.png);")
                 self.lvl_7.label_8.setStyleSheet("background-image: url(:/newPrefix/photo/Line7 5.2.png);")
-
     def Connect_Points_2(self):
         self.lvl_7.circle_3.blockSignals(True)
         self.lvl_7.circle_4.blockSignals(True)
@@ -1001,12 +903,8 @@ class Level7Window(QtWidgets.QMainWindow):
             return
         else:
             if not self.lvl_7.circle_5.isEnabled():
-                self.main_window = LevelsWindow()
-                self.main_window.show()
-                self.close()
                 self.lvl_7.label_6.setStyleSheet("background-image: url(:/newPrefix/photo/Line7 3.2.png);")
                 self.lvl_7.label_9.setStyleSheet("background-image: url(:/newPrefix/photo/Line7 6.2.png);")
-
     def Connect_Points_3(self):
         self.lvl_7.circle_2.blockSignals(True)
         self.lvl_7.circle_4.blockSignals(True)
@@ -1024,7 +922,6 @@ class Level7Window(QtWidgets.QMainWindow):
             if not self.lvl_7.circle_5.isEnabled():
                 self.lvl_7.label_10.setStyleSheet("background-image: url(:/newPrefix/photo/Line7 7.2.png);")
                 self.lvl_7.label_12.setStyleSheet("background-image: url(:/newPrefix/photo/Line7 8.2.png);")
-
     def Connect_Points_4(self):
         self.lvl_7.circle_2.blockSignals(True)
         self.lvl_7.circle_3.blockSignals(True)
@@ -1037,12 +934,8 @@ class Level7Window(QtWidgets.QMainWindow):
             return
         else:
             if not self.lvl_7.circle_1.isEnabled():
-                self.main_window = LevelsWindow()
-                self.main_window.show()
-                self.close()
                 self.lvl_7.label_7.setStyleSheet("background-image: url(:/newPrefix/photo/Line7 4.2.png);")
                 self.lvl_7.label_8.setStyleSheet("background-image: url(:/newPrefix/photo/Line7 5.2.png);")
-
     def Connect_Points_5(self):
         self.lvl_7.circle_1.blockSignals(True)
         self.lvl_7.circle_4.blockSignals(True)
@@ -1059,7 +952,6 @@ class Level7Window(QtWidgets.QMainWindow):
             if not self.lvl_7.circle_3.isEnabled():
                 self.lvl_7.label_10.setStyleSheet("background-image: url(:/newPrefix/photo/Line7 7.2.png);")
                 self.lvl_7.label_12.setStyleSheet("background-image: url(:/newPrefix/photo/Line7 8.2.png);")
-
     def restart(self):
         self.lvl_7.circle_1.setEnabled(True)
         self.lvl_7.circle_2.setEnabled(True)
@@ -1082,12 +974,10 @@ class Level7Window(QtWidgets.QMainWindow):
         self.lvl_7.label_9.setStyleSheet("background-image: url(:/newPrefix/photo/Line7 6.png);")
         self.lvl_7.label_10.setStyleSheet("background-image: url(:/newPrefix/photo/Line7 7.png);")
         self.lvl_7.label_12.setStyleSheet("background-image: url(:/newPrefix/photo/Line7 8.png);")
-
     def go_home(self):
         self.main_window = MainWindow()
         self.main_window.show()
         self.close()
-
     def go_back(self):
         self.main_window = LevelsWindow()
         self.main_window.show()
@@ -1096,6 +986,7 @@ class Level8Window(QtWidgets.QMainWindow):
     def __init__(self):
         super(Level8Window, self).__init__()
         self.move(250, -40)
+        self.setFixedSize(1450, 1000)
         self.lvl_8 = Ui_Level8Window()
         self.lvl_8.setupUi(self)
 
@@ -1111,8 +1002,6 @@ class Level8Window(QtWidgets.QMainWindow):
         self.lvl_8.circle_7.clicked.connect(self.Connect_Points_7)
         self.lvl_8.circle_8.clicked.connect(self.Connect_Points_8)
         self.stopper = True
-    
-
     def Connect_Points_1(self):
         self.lvl_8.circle_3.blockSignals(True)
         self.lvl_8.circle_4.blockSignals(True)
@@ -1133,7 +1022,6 @@ class Level8Window(QtWidgets.QMainWindow):
             if not self.lvl_8.circle_2.isEnabled():
                 self.lvl_8.label_4.setStyleSheet("background-image: url(:/newPrefix/photo/Line8 1.2.png);")
                 self.lvl_8.label_5.setStyleSheet("background-image: url(:/newPrefix/photo/Line8 2.2.png);")
-
     def Connect_Points_2(self):
         self.lvl_8.circle_3.blockSignals(True)
         self.lvl_8.circle_4.blockSignals(True)
@@ -1154,7 +1042,6 @@ class Level8Window(QtWidgets.QMainWindow):
             if not self.lvl_8.circle_5.isEnabled():
                 self.lvl_8.label_15.setStyleSheet("background-image: url(:/newPrefix/photo/Line8 13.2.png);")
                 self.lvl_8.label_16.setStyleSheet("background-image: url(:/newPrefix/photo/Line8 13.2.png);")
-
     def Connect_Points_3(self):
         self.lvl_8.circle_1.blockSignals(True)
         self.lvl_8.circle_2.blockSignals(True)
@@ -1169,12 +1056,8 @@ class Level8Window(QtWidgets.QMainWindow):
             return
         else:
             if not self.lvl_8.circle_7.isEnabled():
-                self.main_window = LevelsWindow()
-                self.main_window.show()
-                self.close()
                 self.lvl_8.label_8.setStyleSheet("background-image: url(:/newPrefix/photo/Line8 5.2.png);")
                 self.lvl_8.label_11.setStyleSheet("background-image: url(:/newPrefix/photo/Line8 14.2.png);")
-
     def Connect_Points_4(self):
         self.lvl_8.circle_1.blockSignals(True)
         self.lvl_8.circle_2.blockSignals(True)
@@ -1190,12 +1073,8 @@ class Level8Window(QtWidgets.QMainWindow):
             return
         else:
             if not self.lvl_8.circle_8.isEnabled():
-                self.main_window = LevelsWindow()
-                self.main_window.show()
-                self.close()
                 self.lvl_8.label_9.setStyleSheet("background-image: url(:/newPrefix/photo/Line8 6.2.png);")
                 self.lvl_8.label_10.setStyleSheet("background-image: url(:/newPrefix/photo/Line8 7.2.png);")
-
     def Connect_Points_5(self):
         self.lvl_8.circle_1.blockSignals(True)
         self.lvl_8.circle_3.blockSignals(True)
@@ -1216,7 +1095,6 @@ class Level8Window(QtWidgets.QMainWindow):
             if not self.lvl_8.circle_6.isEnabled():
                 self.lvl_8.label_6.setStyleSheet("background-image: url(:/newPrefix/photo/Line8 3.2.png);")
                 self.lvl_8.label_14.setStyleSheet("background-image: url(:/newPrefix/photo/Line8 11.2.png);")
-
     def Connect_Points_6(self):
         self.lvl_8.circle_1.blockSignals(True)
         self.lvl_8.circle_2.blockSignals(True)
@@ -1237,8 +1115,6 @@ class Level8Window(QtWidgets.QMainWindow):
             if not self.lvl_8.circle_7.isEnabled():
                 self.lvl_8.label_7.setStyleSheet("background-image: url(:/newPrefix/photo/Line8 4.2.png);")
                 self.lvl_8.label_17.setStyleSheet("background-image: url(:/newPrefix/photo/Line8 10.2.png);")
-
-
     def Connect_Points_7(self):
         self.lvl_8.circle_1.blockSignals(True)
         self.lvl_8.circle_2.blockSignals(True)
@@ -1259,7 +1135,6 @@ class Level8Window(QtWidgets.QMainWindow):
             if not self.lvl_8.circle_6.isEnabled():
                 self.lvl_8.label_7.setStyleSheet("background-image: url(:/newPrefix/photo/Line8 4.2.png);")
                 self.lvl_8.label_17.setStyleSheet("background-image: url(:/newPrefix/photo/Line8 10.2.png);")
-
     def Connect_Points_8(self):
         self.lvl_8.circle_2.blockSignals(True)
         self.lvl_8.circle_3.blockSignals(True)
@@ -1279,7 +1154,6 @@ class Level8Window(QtWidgets.QMainWindow):
             if not self.lvl_8.circle_1.isEnabled():
                 self.lvl_8.label_12.setStyleSheet("background-image: url(:/newPrefix/photo/Line8 8.2.png);")
                 self.lvl_8.label_13.setStyleSheet("background-image: url(:/newPrefix/photo/Line8 9.2.png);")
-
     def restart(self):
         self.lvl_8.circle_1.setEnabled(True)
         self.lvl_8.circle_2.setEnabled(True)
@@ -1318,12 +1192,10 @@ class Level8Window(QtWidgets.QMainWindow):
         self.lvl_8.label_14.setStyleSheet("background-image: url(:/newPrefix/photo/Line8 11.png);")
         self.lvl_8.label_7.setStyleSheet("background-image: url(:/newPrefix/photo/Line8 4.png);")
         self.lvl_8.label_17.setStyleSheet("background-image: url(:/newPrefix/photo/Line8 10.png);")
-
     def go_home(self):
         self.main_window = MainWindow()
         self.main_window.show()
         self.close()
-
     def go_back(self):
         self.main_window = LevelsWindow()
         self.main_window.show()
@@ -1332,32 +1204,30 @@ class SettingsWindow(QtWidgets.QMainWindow):
     def __init__(self):
         super(SettingsWindow, self).__init__()
         self.move(250, -40)
+        self.setFixedSize(1450, 1000)
         self.settings = Ui_SettingsWindow()
         self.settings.setupUi(self)
 
         self.settings.pushButton.clicked.connect(self.go_home)
         self.settings.pushButton_2.clicked.connect(self.sound_on)
         self.settings.pushButton_3.clicked.connect(self.sound_off)
-
     def go_home(self):
         self.main_window = MainWindow()
         self.main_window.show()
         self.close()
-
     def sound_on(self):
         media_player.play()
-
     def sound_off(self):
         media_player.stop()
 class RulesWindow(QtWidgets.QMainWindow):
     def __init__(self):
         super(RulesWindow, self).__init__()
         self.move(250, -40)
+        self.setFixedSize(1450, 1000)
         self.rules = Ui_RulesWindow()
         self.rules.setupUi(self)
 
         self.rules.button_home.clicked.connect(self.go_back)
-
     def go_back(self):
         self.main_window = MainWindow()
         self.main_window.show()
@@ -1367,7 +1237,6 @@ if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)
     window = MainWindow()
-    window.setFixedSize(1450, 1100)
     media_player = QMediaPlayer()
     background_music = QMediaPlaylist()
     background_music.addMedia(QMediaContent(QtCore.QUrl.fromLocalFile("the sound.mp3")))
