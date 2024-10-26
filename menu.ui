@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1450</width>
+    <height>1000</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+border-image: url(:/newPrefix/photo/fon.png);
+border-position: center;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>120</y>
+      <width>1091</width>
+      <height>169</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/newPrefix/photo/Обведи не отрывая лапки.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>470</y>
+      <width>463</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-image: url(:/newPrefix/photo/играть.png);
+border: none;
+border-rudes: 9px;}
+
+QPushButton:hover{
+background-image: url(:/newPrefix/photo/играть2.png);
+border: none;
+border-rudes: 9px;}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>580</y>
+      <width>696</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-image: url(:/newPrefix/photo/настройки.png);
+border: none;
+border-rudes: 9px;}
+
+QPushButton:hover{
+background-image: url(:/newPrefix/photo/настройки2.png);
+border: none;
+border-rudes: 9px;}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>740</y>
+      <width>397</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-image: url(:/newPrefix/photo/выход.png);
+border: none;
+border-rudes: 9px;}
+
+QPushButton:hover{
+background-image: url(:/newPrefix/photo/выход2.png);
+border: none;
+border-rudes: 9px;}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>1290</x>
+      <y>20</y>
+      <width>137</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-image: url(:/newPrefix/photo/vopros.png);
+border: none;
+border-rudes: 9px;}
+
+QPushButton:hover{
+background-image: url(:/newPrefix/photo/vopros2.png);
+border: none;
+border-rudes: 9px;}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="photos.qrc"/>
+ </resources>
+ <connections/>
+</ui>

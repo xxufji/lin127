@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Level3Window</class>
+ <widget class="QMainWindow" name="Level3Window">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1450</width>
+    <height>1000</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+border-image: url(:/newPrefix/photo/fon_lvl.png);
+border-position: center;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>128</width>
+      <height>119</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>128</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>128</width>
+      <height>122</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-image: url(:/newPrefix/photo/home.png);
+border: none;
+border-ruds: 9px;}
+
+QPushButton:hover{
+background-image: url(:/newPrefix/photo/home2.png);
+border: none;
+border-ruds: 9px;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>189</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-image: url(:/newPrefix/photo/back.png);
+border: none;
+border-ruds: 9px;}
+
+QPushButton:hover{
+background-image: url(:/newPrefix/photo/back2.png);
+border: none;
+border-ruds: 9px;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>1300</x>
+      <y>20</y>
+      <width>128</width>
+      <height>119</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+
+border: none;
+	background-image: url(:/newPrefix/photo/zanovo.png);
+border-ruds: 9px;}
+
+QPushButton:hover{
+background-image: url(:/newPrefix/photo/zanovo2.png);
+border: none;
+border-ruds: 9px;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>50</y>
+      <width>551</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/newPrefix/photo/уровень.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>850</y>
+      <width>338</width>
+      <height>77</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/newPrefix/photo/счёт.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>1000</x>
+      <y>40</y>
+      <width>71</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/newPrefix/photo/lvl3.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="circle_2">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>270</y>
+      <width>49</width>
+      <height>52</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-image: url(:/newPrefix/photo/Ellipse 1.png);
+border: none;
+border-ruds: 9px;}
+
+QPushButton:hover{
+background-image: url(:/newPrefix/photo/Ellipse 2.png);
+border: none;
+border-ruds: 9px;}
+
+QPushButton:disabled{
+background-image: url(:/newPrefix/photo/Ellipse 2.png);
+border: none;
+border-ruds: 9px;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="circle_5">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>650</y>
+      <width>49</width>
+      <height>52</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-image: url(:/newPrefix/photo/Ellipse 1.png);
+border: none;
+border-ruds: 9px;}
+
+QPushButton:hover{
+background-image: url(:/newPrefix/photo/Ellipse 2.png);
+border: none;
+border-ruds: 9px;}
+
+QPushButton:disabled{
+background-image: url(:/newPrefix/photo/Ellipse 2.png);
+border: none;
+border-ruds: 9px;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="circle_1">
+    <property name="geometry">
+     <rect>
+      <x>853</x>
+      <y>265</y>
+      <width>49</width>
+      <height>52</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-image: url(:/newPrefix/photo/Ellipse 1.png);
+border: none;
+border-ruds: 9px;}
+
+QPushButton:hover{
+background-image: url(:/newPrefix/photo/Ellipse 2.png);
+border: none;
+border-ruds: 9px;}
+
+QPushButton:disabled{
+background-image: url(:/newPrefix/photo/Ellipse 2.png);
+border: none;
+border-ruds: 9px;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="circle_4">
+    <property name="geometry">
+     <rect>
+      <x>851</x>
+      <y>653</y>
+      <width>49</width>
+      <height>52</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-image: url(:/newPrefix/photo/Ellipse 1.png);
+border: none;
+border-ruds: 9px;}
+
+QPushButton:hover{
+background-image: url(:/newPrefix/photo/Ellipse 2.png);
+border: none;
+border-ruds: 9px;}
+
+QPushButton:disabled{
+background-image: url(:/newPrefix/photo/Ellipse 2.png);
+border: none;
+border-ruds: 9px;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="circle_3">
+    <property name="geometry">
+     <rect>
+      <x>659</x>
+      <y>398</y>
+      <width>49</width>
+      <height>52</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-image: url(:/newPrefix/photo/Ellipse 1.png);
+border: none;
+border-ruds: 9px;}
+
+QPushButton:hover{
+background-image: url(:/newPrefix/photo/Ellipse 2.png);
+border: none;
+border-ruds: 9px;}
+
+QPushButton:disabled{
+background-image: url(:/newPrefix/photo/Ellipse 2.png);
+border: none;
+border-ruds: 9px;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="circle_6">
+    <property name="geometry">
+     <rect>
+      <x>661</x>
+      <y>739</y>
+      <width>49</width>
+      <height>52</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-image: url(:/newPrefix/photo/Ellipse 1.png);
+border: none;
+border-ruds: 9px;}
+
+QPushButton:hover{
+background-image: url(:/newPrefix/photo/Ellipse 2.png);
+border: none;
+border-ruds: 9px;}
+
+QPushButton:disabled{
+background-image: url(:/newPrefix/photo/Ellipse 2.png);
+border: none;
+border-ruds: 9px;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>655</y>
+      <width>241</width>
+      <height>133</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/newPrefix/photo/Line3 1.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>270</y>
+      <width>241</width>
+      <height>179</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/newPrefix/photo/Line3 2.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>265</y>
+      <width>241</width>
+      <height>183</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/newPrefix/photo/Line3 3.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>657</x>
+      <y>396</y>
+      <width>243</width>
+      <height>307</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/newPrefix/photo/Line3 5.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>400</y>
+      <width>239</width>
+      <height>302</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/newPrefix/photo/Line3 6.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>653</y>
+      <width>241</width>
+      <height>138</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/newPrefix/photo/Line3 7.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>270</y>
+      <width>49</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/newPrefix/photo/Line3 8.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>854</x>
+      <y>267</y>
+      <width>49</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/newPrefix/photo/Line3 8.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="circle_8">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>770</y>
+      <width>49</width>
+      <height>52</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-image: url(:/newPrefix/photo/Ellipse 1.png);
+border: none;
+border-ruds: 9px;}
+
+QPushButton:hover{
+background-image: url(:/newPrefix/photo/Ellipse 2.png);
+border: none;
+border-ruds: 9px;}
+
+QPushButton:disabled{
+background-image: url(:/newPrefix/photo/Ellipse 2.png);
+border: none;
+border-ruds: 9px;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="circle_7">
+    <property name="geometry">
+     <rect>
+      <x>854</x>
+      <y>768</y>
+      <width>49</width>
+      <height>52</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-image: url(:/newPrefix/photo/Ellipse 1.png);
+border: none;
+border-ruds: 9px;}
+
+QPushButton:hover{
+background-image: url(:/newPrefix/photo/Ellipse 2.png);
+border: none;
+border-ruds: 9px;}
+
+QPushButton:disabled{
+background-image: url(:/newPrefix/photo/Ellipse 2.png);
+border: none;
+border-ruds: 9px;}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label_12</zorder>
+   <zorder>label_11</zorder>
+   <zorder>label_10</zorder>
+   <zorder>label_9</zorder>
+   <zorder>label_8</zorder>
+   <zorder>label_7</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_4</zorder>
+   <zorder>pushButton</zorder>
+   <zorder>pushButton_2</zorder>
+   <zorder>pushButton_3</zorder>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
+   <zorder>circle_2</zorder>
+   <zorder>circle_5</zorder>
+   <zorder>circle_1</zorder>
+   <zorder>circle_4</zorder>
+   <zorder>circle_3</zorder>
+   <zorder>circle_6</zorder>
+   <zorder>circle_8</zorder>
+   <zorder>circle_7</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="photos.qrc"/>
+ </resources>
+ <connections/>
+</ui>
